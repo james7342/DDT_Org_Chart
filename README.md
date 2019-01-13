@@ -41,7 +41,9 @@ Fix and Enhancements:
 
 # Introduction:
 
-This DevPCI module - DDT_Org_Chart for DotNetNuke 6.2.4 + is based on Telerik Org Chart (google it to see demos on Telerik website) for his View. The Edit Data part is based on Telerik Grid(s).
+This DevPCI module - DDT_Org_Chart for DotNetNuke 6.2.4 + is based on Telerik Org Chart for the View. The Edit Data part is based on Telerik Grid(s).
+<a href>https://www.telerik.com/products/aspnet-ajax/orgchart.aspx</a>
+<a href>https://www.telerik.com/products/aspnet-ajax/grid.aspx</a>
 
 # This module has 2 modes of operation:
 A "Simple" one, where items are linked to each others (parent / child relation).</br>
@@ -55,9 +57,9 @@ In "Simple" mode, it must have at least one root item (no parent set).</br>
 In "With Group" mode, it must have at least one root group (no parent set).</br>
 The Drag and Drop will work for admins in the View as soon as: 
 <ol>
-  <li>There is only one root Item (Simple mode) or only one root Group (With Group mode)/li>
+  <li>There is only one root Item "Simple" mode or only one root Group (With Group mode)</li>
   <li>At least on item has a parent set in "Simple" mode, and at least one group has a parent in "With Group mode"</li>
-  <li>There is enought groups and/or items to get sources and destinations for D&D</li>
+  <li>There is enought groups and/or items to get sources and destinations for Drag and Drop</li>
 </ol> 
 
 # See Demo on Live Website:
