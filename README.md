@@ -18,7 +18,7 @@ I'm no developer by any means so really looking for someone to contribute and he
 
 <hr>
 
-# Orginal Release Information from CodePlex:
+# Original Release Information from CodePlex:
 https://archive.codeplex.com/?p=ddtorgchart
 
 About the DevPCI DDT_Org_Chart for DotNetNuke 6.2.4 +
@@ -60,7 +60,7 @@ The Drag and Drop will work for admins in the View as soon as:
   <li>There is enought groups and/or items to get sources and destinations for D&D</li>
 </ol> 
 
-# See Demo on live web site:
+# See Demo on Live Website:
 http://www.devpci.com/DotNetNuke/Modules/ModuleDDT_Org_Chart/SimpleDemo.aspx
 http://www.devpci.com/DotNetNuke/Modules/ModuleDDT_Org_Chart/WithGroupDemo.aspx
 http://www.devpci.com/DotNetNuke/Modules/ModuleDDT_Org_Chart/FootballDemo.aspx
