@@ -112,16 +112,16 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ConfirmChangeMode.Text" xml:space="preserve">
     <value>Confirmer le changement de mode ! Attention, cela va reinitialiser les liens entre les objets. Vous devrez aller dans Edition Données du Module pour recréer les liaisons entre objet et/ou groupes.</value>
   </data>
   <data name="ControlTitle_settings.Text" xml:space="preserve">
-    <value>Paramétrage DevPCI - DDT_Org_Chart</value>
+    <value>Paramétrage DDT_Org_Chart</value>
   </data>
   <data name="DefaultImageUrl.Help" xml:space="preserve">
     <value>Vous pouvez spécifier (facultatif) une url pour l'image par defaut. ex : /Portals/0/Images/defaultpict-48x48.png</value>
