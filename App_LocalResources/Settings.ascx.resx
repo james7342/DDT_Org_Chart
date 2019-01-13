@@ -121,7 +121,7 @@
     <value>Confirm Change Mode ! Take care it will reset links beetween items or groups. You must go to Edit Module Datas to relink items and/or groups</value>
   </data>
   <data name="ControlTitle_settings.Text" xml:space="preserve">
-    <value>DDT_Org_Chart Settings</value>
+    <value>Org Chart Settings</value>
   </data>
   <data name="DefaultImageUrl.Help" xml:space="preserve">
     <value>You can specify an url for default image. ex: /Portals/0/Images/defaultpict-48x48.png</value>

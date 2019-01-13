@@ -4,8 +4,7 @@
 <%@ Register TagPrefix="dnn" TagName="UrlControl" Src="~/controls/URLControl.ascx" %>
 <%@ Register TagPrefix="dnn" Assembly="DotNetNuke.Web" Namespace="DotNetNuke.Web.UI.WebControls" %>
 <%@ Register TagPrefix="dnn" Assembly="DotNetNuke" Namespace="DotNetNuke.UI.WebControls" %>
-<%--<%@ Register TagPrefix="dnn" TagName="FilePickerUploader" Src="~/controls/filepickeruploader.ascx" %>
---%>
+<%-- %><%@ Register TagPrefix="dnn" TagName="FilePickerUploader" Src="~/controls/filepickeruploader.ascx" %> --%>
 <%@ Import Namespace="DotNetNuke.Services.Localization" %>
 <script type="text/javascript">
     var uploadedFilesCount = 0;
@@ -411,6 +410,9 @@
         <FilterMenu EnableImageSprites="False">
         </FilterMenu>
     </telerik:RadGrid>
+
+<%--Edit WIth Group Contols--%>
+
     <h1><asp:Label ID="lblItems2" runat="server" Text="Items" ResourceKey="lblItems"></asp:Label></h1><telerik:RadGrid ID="RG_Items_WithGroup" runat="server" AllowAutomaticDeletes="True"
     AllowAutomaticInserts="True" AllowAutomaticUpdates="True" AllowMultiRowEdit="True" AllowMultiRowSelection="True"
     AutoGenerateColumns="False" CellSpacing="0" DataSourceID="LDS_Org_Chart_Items"
@@ -510,8 +512,10 @@
             <telerik:GridTemplateColumn DataField="ItemImageUrl_Org_Chart" FilterControlAltText="Filter ItemImageUrl_Org_Chart column" HeaderText="Item Image Url" SortExpression="ItemImageUrl_Org_Chart"
                     UniqueName="ItemImageUrl_Org_Chart" HeaderStyle-Width="280px">
                     <EditItemTemplate>
-                        <dnn:DnnFilePicker runat="server" ID="FilePickerSimple"  FilePath='<%# Bind("ItemImageUrl_Org_Chart")%>'
+                       <dnn:DnnFilePicker runat="server" ID="FilePickerSimple" FilePath='<%# Bind("ItemImageUrl_Org_Chart")%>'
                         FileFilter="jpg,png,gif" />
+<%--                   <dnn:DnnFilePickerUploader runat="server" ID="FilePickerSimple" FilePath='<%# Bind("ItemImageUrl_Org_Chart")%>'
+                        FileFilter="jpg,png,gif" />--%>
                     </EditItemTemplate>
                     <ItemTemplate>
                         <img alt="<%# Eval("ItemImageUrl_Org_Chart")%>" src="/Portals/<%# Eval("PortalId") %>/<%# Eval("ItemImageUrl_Org_Chart")%>" />
@@ -521,7 +525,6 @@
                               style="border:0px;vertical-align:middle;" /></asp:LinkButton>
                     </ItemTemplate>
             </telerik:GridTemplateColumn>
-
             <telerik:GridTemplateColumn DataField="ItemOrder_Org_Chart" DataType="System.Int32"
                     FilterControlAltText="Filter ItemOrder_Org_Chart column" HeaderText="Order" SortExpression="ItemOrder_Org_Chart"
                     UniqueName="ItemOrder_Org_Chart">
@@ -541,7 +544,7 @@
                 <telerik:GridCheckBoxColumn DataField="IsDeleted" DataType="System.Boolean" FilterControlAltText="Filter IsDeleted column"
                     HeaderText="Is Deleted" SortExpression="IsDeleted" UniqueName="IsDeleted">
                 </telerik:GridCheckBoxColumn>
-            <telerik:GridTemplateColumn HeaderText="Order" UniqueName="Order" HeaderStyle-Width = "40px">
+            <telerik:GridTemplateColumn HeaderText="Order" UniqueName="Order" HeaderStyle-Width = "10px">
                 <ItemTemplate>
                     <asp:LinkButton ID="DDT_Org_Chart_Item2lnkOrderDown" runat="server" CommandArgument='<%# Eval("ID_Org_Chart_Item") %>'
                         CommandName="OrderDown" OnClick="DDT_Org_Chart_Item2lnkOrderDown_Click" Text="down"><img alt="" 
