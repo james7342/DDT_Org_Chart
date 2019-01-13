@@ -10,7 +10,8 @@ I have taken the orginal source code and have gotten the module working in DNN 9
 
 I'm no developer by any means so really looking for someone to contribute and help make this module better for teh DNN Community.
 
-# Changes to make it work in DNN 9.2.2
+# Version Beta 00.00.06
+<li>Changes for DNN 9.2.2</li>
 <li>Removed DotNetNuke.Services.Search Namespace. Depreciated in 7.1.</li>
 <li>Change UserController.GetCurrentUserInfo to UserController.Instance.GetCurrentUserInfo. Depreciated in DNN 7.3.</li>
 <li>Change SQL Provider files to check if tables already exist and not try to recreate them during installation.</li>
@@ -20,11 +21,11 @@ https://archive.codeplex.com/?p=ddtorgchart
 
 About the DevPCI DDT_Org_Chart for DotNetNuke 6.2.4 +
 
-# Version beta 00.00.05
+# Version Beta 00.00.05
 
 Implement IPortable (export / import / copy module)
 
-# Version beta 00.00.04
+# Version Beta 00.00.04
 
 Fix and Enhancements:
 
@@ -33,7 +34,7 @@ Fix and Enhancements:
 <li>Localize grids header columns</li>
 <li>Localize title (Groups, Items) in Edit</li>
 
-# Version beta 00.00.03
+# Version Beta 00.00.03
   <li>Initial Version</li>
 
 # Introduction:
