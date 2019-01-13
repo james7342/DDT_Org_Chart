@@ -41,8 +41,9 @@ Fix and Enhancements:
 
 # Introduction:
 
-This DevPCI module - DDT_Org_Chart for DotNetNuke 6.2.4 + is based on Telerik Org Chart for the View. The Edit Data part is based on Telerik Grid(s).
-<a href>https://www.telerik.com/products/aspnet-ajax/orgchart.aspx</a>
+This DevPCI module - DDT_Org_Chart for DotNetNuke 6.2.4 + is based on Telerik Org Chart for the View. The Edit Data part is based on Telerik Grid(s).</br>
+
+<a href>https://www.telerik.com/products/aspnet-ajax/orgchart.aspx</a></br>
 <a href>https://www.telerik.com/products/aspnet-ajax/grid.aspx</a>
 
 # This module has 2 modes of operation:
