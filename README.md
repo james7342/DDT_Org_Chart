@@ -16,6 +16,7 @@ I'm no developer by any means so really looking for someone to contribute and he
 <li>Change UserController.GetCurrentUserInfo to UserController.Instance.GetCurrentUserInfo. Depreciated in DNN 7.3.</li>
 <li>Change SQL Provider files to check if tables already exist and not try to recreate them during installation.</li>
 
+<hr>
 # Orginal Release Information from CodePlex:
 https://archive.codeplex.com/?p=ddtorgchart
 
