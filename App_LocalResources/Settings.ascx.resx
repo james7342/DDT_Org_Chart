@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfirmChangeMode.Text" xml:space="preserve">
+    <value>Confirm Change Mode ! Take care it will reset links beetween items or groups. You must go to Edit Module Datas to relink items and/or groups</value>
+  </data>
+  <data name="ControlTitle_settings.Text" xml:space="preserve">
+    <value>DevPCI - DDT_Org_Chart Settings</value>
+  </data>
+  <data name="DefaultImageUrl.Help" xml:space="preserve">
+    <value>You can specify an url for default image. ex: /Portals/0/Images/defaultpict-48x48.png</value>
+  </data>
+  <data name="DefaultImageUrl.Text" xml:space="preserve">
+    <value>Default Image Url</value>
+  </data>
+  <data name="DisableDefaultImage.Help" xml:space="preserve">
+    <value>Disable default image will not show the default image if no image loaded.</value>
+  </data>
+  <data name="DisableDefaultImage.Text" xml:space="preserve">
+    <value>Disable default image</value>
+  </data>
+  <data name="EnableCollapsing.Help" xml:space="preserve">
+    <value>Enable to be able to collapse nodes</value>
+  </data>
+  <data name="EnableCollapsing.Text" xml:space="preserve">
+    <value>Enable Collapsing</value>
+  </data>
+  <data name="EnableDrillDown.Help" xml:space="preserve">
+    <value>Enable to get Drill Down functionality (Graphic bug  under DNN6 because of default.css, work under DNN7)</value>
+  </data>
+  <data name="EnableDrillDown.Text" xml:space="preserve">
+    <value>Enable Drill Down</value>
+  </data>
+  <data name="EnableGroupCollapsing.Help" xml:space="preserve">
+    <value>Enable Group Collapsing Help text</value>
+  </data>
+  <data name="EnableGroupCollapsing.Text" xml:space="preserve">
+    <value>Enable Group Collapsing</value>
+  </data>
+  <data name="ExpandCollapseAllGroups.Help" xml:space="preserve">
+    <value>ExpandCollapseAllGroups Help text</value>
+  </data>
+  <data name="ExpandCollapseAllGroups.Text" xml:space="preserve">
+    <value>ExpandCollapseAllGroups</value>
+  </data>
+  <data name="ExpandCollapseAllNodes.Help" xml:space="preserve">
+    <value>ExpandCollapseAllNodes help text</value>
+  </data>
+  <data name="ExpandCollapseAllNodes.Text" xml:space="preserve">
+    <value>ExpandCollapseAllNodes</value>
+  </data>
+  <data name="GroupColumnCount.Help" xml:space="preserve">
+    <value>Default Number of Column in a Group</value>
+  </data>
+  <data name="GroupColumnCount.Text" xml:space="preserve">
+    <value>Group Column Count</value>
+  </data>
+  <data name="Intro.Text" xml:space="preserve">
+    <value>Take care there is two use for this module, Simple , or With Group. By enabling/disabling WithGroup gives you to relocate the datas in Edit Module Datas. Simple, items are related each others. With group, groups are related to each other and item are related to Group.</value>
+  </data>
+  <data name="ItemTitle.Help" xml:space="preserve">
+    <value>Item title (DNN 6.2.4/5/6 only, don't work under DNN 7 + at the moment)</value>
+  </data>
+  <data name="ItemTitle.Text" xml:space="preserve">
+    <value>Item title</value>
+  </data>
+  <data name="LoadOnDemand.Help" xml:space="preserve">
+    <value>Enable LoadOnDemand will automaticaly enable collapse</value>
+  </data>
+  <data name="LoadOnDemand.Text" xml:space="preserve">
+    <value>Enable LoadOnDemand</value>
+  </data>
+  <data name="Mode.Help" xml:space="preserve">
+    <value>Simple, items are related each others. With Group, groups are related to each others and item are related to Group. Go to Edit Module Datas if setting is changed.</value>
+  </data>
+  <data name="Mode.Text" xml:space="preserve">
+    <value>Mode</value>
+  </data>
+  <data name="NodeLabel.Help" xml:space="preserve">
+    <value>Group title (DNN 6.2.4/5/6 only, don't work under DNN 7 + at the moment)</value>
+  </data>
+  <data name="NodeLabel.Text" xml:space="preserve">
+    <value>Group title</value>
+  </data>
+  <data name="ReductSize25.Help" xml:space="preserve">
+    <value>Reduct Size of 25 %</value>
+  </data>
+  <data name="ReductSize25.Text" xml:space="preserve">
+    <value>Reduct Size of 25 %</value>
+  </data>
+  <data name="ShowExpandCollapseGroupButton.Help" xml:space="preserve">
+    <value>Show Expand Collapse Group Button</value>
+  </data>
+  <data name="ShowExpandCollapseGroupButton.Text" xml:space="preserve">
+    <value>Show Expand Collapse Group Button</value>
+  </data>
+  <data name="ShowExpandCollapseNodeButton.Help" xml:space="preserve">
+    <value>Show Expand/Collapse Node Button</value>
+  </data>
+  <data name="ShowExpandCollapseNodeButton.Text" xml:space="preserve">
+    <value>Show Expand/Collapse Node Button</value>
+  </data>
+  <data name="Simple.Text" xml:space="preserve">
+    <value>Simple</value>
+  </data>
+  <data name="Skin.Help" xml:space="preserve">
+    <value>Select a skin</value>
+  </data>
+  <data name="Skin.Text" xml:space="preserve">
+    <value>Telerik Skin</value>
+  </data>
+  <data name="WithGroup.Text" xml:space="preserve">
+    <value>With Group</value>
+  </data>
+</root>

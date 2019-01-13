@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dnn626ce" Class="DDT_Org_Chart_LinqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=JG-XPS8100\SQL2K12EXPRESS;Initial Catalog=dnn626ce;User ID=dnnloc" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="SiteSqlServer" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DDT_Org_Chart_Nodes" Member="DDT_Org_Chart_Nodes">
+    <Type Name="DDT_Org_Chart_Node">
+      <Column Name="ID_Org_Chart_Node" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModuleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ParentID_Org_Chart_Node" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeamName_Org_Chart_Node" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NodeOrder_Org_Chart" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Collapsed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GroupCollapsed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ColumnCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DDT_Org_Chart_Items" Member="DDT_Org_Chart_Items">
+    <Type Name="DDT_Org_Chart_Item">
+      <Column Name="ID_Org_Chart_Item" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModuleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_Org_Chart_Node" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ItemName_Org_Chart" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ItemTitle_Org_Chart" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ItemImageUrl_Org_Chart" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ItemOrder_Org_Chart" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Collapsed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

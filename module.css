@@ -1,0 +1,17 @@
+ul li {list-style-type:none;}
+ul li li {list-style-type:none;}
+ul li li li {list-style-type:none;}
+ol li {list-style-type:decimal;}
+ol ol li {list-style-type:lower-alpha;}
+ol ol ol li {list-style-type:lower-roman;}
+ol ul li {list-style-type:none;}
+
+.dnnFormItem CountTextArea {width:50px;}
+.dnnFormItem input[type="text"], .dnnFormItem textarea {
+    min-width: 50px;
+}
+
+.dnnFormMessage {
+    display: block;
+}
+

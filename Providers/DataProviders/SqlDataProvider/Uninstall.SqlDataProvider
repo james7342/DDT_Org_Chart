@@ -1,0 +1,24 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+/****** Object:  Table {databaseOwner}{objectQualifier}[DDT_Org_Chart_Items]    Script Date: 1/12/19 ******/
+DROP TABLE {databaseOwner}[{objectQualifier}DDT_Org_Chart_Items]
+
+GO
+
+/****** Object:  Table {databaseOwner}{objectQualifier}[DDT_Org_Chart_Nodes]    Script Date: 1/12/19 ******/
+DROP TABLE {databaseOwner}[{objectQualifier}DDT_Org_Chart_Nodes]
+
+GO

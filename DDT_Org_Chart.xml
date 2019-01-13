@@ -1,0 +1,654 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DDT_Org_Chart</name>
+    </assembly>
+    <members>
+        <member name="T:DevPCI.Modules.DDT_Org_Chart.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for DDT_Org_Chart
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DevPCI.Modules.DDT_Org_Chart.Components.FeatureController.ExportModule(System.Int32)">
+            -----------------------------------------------------------------------------
+            <summary>
+            ExportModule implements the IPortable ExportModule Interface
+            </summary>
+            <param name="ModuleID">The Id of the module to be exported</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DevPCI.Modules.DDT_Org_Chart.Components.FeatureController.ImportModule(System.Int32,System.String,System.String,System.Int32)">
+            -----------------------------------------------------------------------------
+            <summary>
+            ImportModule implements the IPortable ImportModule Interface
+            </summary>
+            <param name="ModuleID">The Id of the module to be imported</param>
+            <param name="Content">The content to be imported</param>
+            <param name="Version">The version of the module to be imported</param>
+            <param name="UserID">The Id of the user performing the import</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DevPCI.Modules.DDT_Org_Chart.Components.FeatureController.UpgradeModule(System.String)">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpgradeModule implements the IUpgradeable Interface
+            </summary>
+            <param name="Version">The current version of the module</param>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DevPCI.Modules.DDT_Org_Chart.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DevPCI.Modules.DDT_Org_Chart.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DevPCI.Modules.DDT_Org_Chart.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditDDT_Org_Chart class is used to manage content
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.phdnn7filepickercsshack">
+            <summary>
+            phdnn7filepickercsshack control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.LblMode">
+            <summary>
+            LblMode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.LblDNNVersion">
+            <summary>
+            LblDNNVersion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.PhMessageNotif3">
+            <summary>
+            PhMessageNotif3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.Image3">
+            <summary>
+            Image3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.LblMessageNotif3">
+            <summary>
+            LblMessageNotif3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.PHSimple">
+            <summary>
+            PHSimple control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.lblItems">
+            <summary>
+            lblItems control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.RG_Items_Simple">
+            <summary>
+            RG_Items_Simple control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.PHWithGroup">
+            <summary>
+            PHWithGroup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.lblGroups">
+            <summary>
+            lblGroups control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.RG_Teams">
+            <summary>
+            RG_Teams control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.lblItems2">
+            <summary>
+            lblItems2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.RG_Items_WithGroup">
+            <summary>
+            RG_Items_WithGroup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.LDS_Org_Chart_Nodes">
+            <summary>
+            LDS_Org_Chart_Nodes control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.LDS_ParentNodes_Select">
+            <summary>
+            LDS_ParentNodes_Select control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.LDS_ParentItems_Select">
+            <summary>
+            LDS_ParentItems_Select control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.LDS_Org_Chart_Items">
+            <summary>
+            LDS_Org_Chart_Items control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.hlCancel">
+            <summary>
+            hlCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.lblPortalID">
+            <summary>
+            lblPortalID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.lblModuleID">
+            <summary>
+            lblModuleID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.CheckBoxIsSuperUser">
+            <summary>
+            CheckBoxIsSuperUser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DevPCI.Modules.DDT_Org_Chart.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DevPCI.Modules.DDT_Org_Chart.Settings">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.LblIntro">
+            <summary>
+            LblIntro control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.rbMode">
+            <summary>
+            rbMode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.ConfirmChangeModeValidator">
+            <summary>
+            ConfirmChangeModeValidator control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.ddlSkin">
+            <summary>
+            ddlSkin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.cbEnableCollapsing">
+            <summary>
+            cbEnableCollapsing control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.cbDisableDefaultImage">
+            <summary>
+            cbDisableDefaultImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.tbDefaultImageUrl">
+            <summary>
+            tbDefaultImageUrl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.TextBoxItemTitle">
+            <summary>
+            TextBoxItemTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.cbEnableDrillDown">
+            <summary>
+            cbEnableDrillDown control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.cbShowExpandCollapseNodeButton">
+            <summary>
+            cbShowExpandCollapseNodeButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.PHGroup">
+            <summary>
+            PHGroup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.TextBoxNodeLabel">
+            <summary>
+            TextBoxNodeLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.tbGroupColumnCount">
+            <summary>
+            tbGroupColumnCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.cbEnableGroupCollapsing">
+            <summary>
+            cbEnableGroupCollapsing control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.cbShowExpandCollapseGroupButton">
+            <summary>
+            cbShowExpandCollapseGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.ddlLoadOnDemand">
+            <summary>
+            ddlLoadOnDemand control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.cbReductSize25">
+            <summary>
+            cbReductSize25 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.lblPortalID">
+            <summary>
+            lblPortalID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.Settings.lblModuleID">
+            <summary>
+            lblModuleID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DevPCI.Modules.DDT_Org_Chart.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DevPCI.Modules.DDT_Org_Chart.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DevPCI.Modules.DDT_Org_Chart.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The ViewDDT_Org_Chart class displays the content
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.phInit">
+            <summary>
+            phInit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.phReductSize25">
+            <summary>
+            phReductSize25 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.DDT_Org_Chart_Div">
+            <summary>
+            DDT_Org_Chart_Div control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.LblMode">
+            <summary>
+            LblMode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.PHSimple">
+            <summary>
+            PHSimple control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.DDT_Org_Chart_Simple">
+            <summary>
+            DDT_Org_Chart_Simple control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.PHWithGroup">
+            <summary>
+            PHWithGroup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.DDT_Org_Chart_WithGroup">
+            <summary>
+            DDT_Org_Chart_WithGroup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.LDS_Org_Chart_Items_Simple">
+            <summary>
+            LDS_Org_Chart_Items_Simple control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.LDS_Org_Chart_Nodes">
+            <summary>
+            LDS_Org_Chart_Nodes control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.LDS_Org_Chart_Items_WithGroup">
+            <summary>
+            LDS_Org_Chart_Items_WithGroup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.lblPortalID">
+            <summary>
+            lblPortalID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.lblModuleID">
+            <summary>
+            lblModuleID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.lblLoadOnDemand">
+            <summary>
+            lblLoadOnDemand control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.phShowExpandCollapseNodeButton">
+            <summary>
+            phShowExpandCollapseNodeButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.LinkButton1">
+            <summary>
+            LinkButton1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.LinkButton4">
+            <summary>
+            LinkButton4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.phShowExpandCollapseGroupButton">
+            <summary>
+            phShowExpandCollapseGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.LinkButton2">
+            <summary>
+            LinkButton2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DevPCI.Modules.DDT_Org_Chart.View.LinkButton3">
+            <summary>
+            LinkButton3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DevPCI.Modules.DDT_Org_Chart.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

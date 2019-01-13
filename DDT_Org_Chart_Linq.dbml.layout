@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DDT_Org_Chart_Linq">
+  <DataContextMoniker Name="/DDT_Org_Chart_LinqDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c38a1a42-cb8f-4aea-a910-94495c691c75" absoluteBounds="1, 1.25, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/DDT_Org_Chart_LinqDataContext/DDT_Org_Chart_Node" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59ffde2b-a2f2-49f8-a6a4-81903b2d4901" absoluteBounds="1.0149999999999997, 1.71, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f388e8a1-025b-41e0-b94f-573e09dc763c" absoluteBounds="3.5, 1.25, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/DDT_Org_Chart_LinqDataContext/DDT_Org_Chart_Item" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9aca69ed-5172-41c8-95b1-fbb0648a5f61" absoluteBounds="3.5150000000000006, 1.71, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,85 @@
+﻿<h3>DDT_Org_Chart</h3>
+<p class="Contributor">
+Migrated to GitHub James Rosenfelt
+Original Developement done by:
+DevPCI <br />
+<a href="mailto:contact@DevPCI.com">contact@DevPCI.com</a><br />
+<a href="http://www.DevPCI.com">http://www.DevPCI.com</a></p>
+Orginal Source code was obtained from CodePlex Archive
+<a href="https://archive.codeplex.com/?p=ddtorgchart</a>
+<hr />
+<p class="License">
+</p>
+<h3>About DDT_Org_Chart</h3>
+<p class="Owner">
+<strong>Version beta 00.00.06</strong>
+</p>
+<p>Fix and Enhancements :</p>
+<ul>
+	<li>Project Migration from CodePlex to GitHub</li>
+	<li>Updated for DNN 9.2</li>
+	<li>DNN 9.2 required as unable to test on older versions</li>
+	<li>Change SQL Provider files to Check if tables already exist and not try to recreate them</li>
+	<li>Removed DotNetNuke.Services.Search Namespace. Depreciated in 7.1</li>
+	<li>Change UserController.GetCurrentUserInfo to UserController.Instance.GetCurrentUserInfo. Depreciated in DNN 7.3</li>
+	<li>General Code Changes</li>
+</ul>
+<p class="Owner">
+<strong>Version beta 00.00.05</strong>
+</p>
+<p>Fix and Enhancements :</p>
+<ul>
+	<li>Implement IPortable</li>
+</ul>
+<p class="Owner">
+<strong>Version beta 00.00.04</strong>
+</p>
+<p>Fix and Enhancements :</p>
+<ul>
+	<li>Fix file picker in Edit mode with folder different than root</li>
+    <li>Localize javascript alert confirm</li>
+    <li>Localize grids header columns</li>
+    <li>Localize title (Groups, Items) in Edit</li>
+</ul>
+<p class="Owner">
+<strong>Version beta 00.00.03</strong>
+</p>
+<p>Description about version.</p>
+<h4>Introduction : </h4>
+<p>This DevPCI module - DDT_Org_Chart for DotNetNuke 6.2.4 + is based on Telerik Org Chart (google it to see demos on Telerik website) for his View. The Edit Data part is based on Telerik Grid(s).<br />
+<br />
+This module have 2 modes of operation :
+</p>
+<ul>
+    <li>A "Simpe" one, where items are linked to each others (parent / child relation).</li>
+    <li>A "WithGroup" one, where group are linked to each others (parent / child relation), and items are linked to groups.</li>
+</ul>
+Please note :<br />
+<strong>The relations betwwen items and/or groups will be reset by changing mode in the Settings.<br />
+You'll have to rebuild the new relations in the Edit Data part.</strong><br />
+Images must be <strong>48px x 48px</strong><br />
+In "Simple" mode, it must have at least one root item (no parent set)<br />
+In "With Group" mode, it must have at least one root group (no parent set)<br />
+The Drag and Drop will work for admins in the View as soon as : <br />
+1 - there is only one root Item (Simple mode) or only one root Group (WithGroup mode)
+2 - at least on item has a parent set in "Simple" mode, and at least one group has a parent in "With Group mode".
+3 - There is enought groups and/or items to get sources and destinations for D&amp;D.
+<p>&nbsp;</p>
+<strong>See render demo on live web site :</strong><br />
+<p class="License"><a target="_blank" href="http://www.devpci.com/DotNetNuke/Modules/ModuleDDT_Org_Chart/SimpleDemo.aspx">http://www.devpci.com/DotNetNuke/Modules/ModuleDDT_Org_Chart/SimpleDemo.aspx</a><br />
+<a target="_blank" href="http://www.devpci.com/DotNetNuke/Modules/ModuleDDT_Org_Chart/WithGroupDemo.aspx">http://www.devpci.com/DotNetNuke/Modules/ModuleDDT_Org_Chart/WithGroupDemo.aspx</a><br />
+<a target="_blank" href="http://www.devpci.com/DotNetNuke/Modules/ModuleDDT_Org_Chart/FootballDemo.aspx">http://www.devpci.com/DotNetNuke/Modules/ModuleDDT_Org_Chart/FootballDemo.aspx</a><br />
+<strong></strong></p>
+<p class="License"><strong>See 2 demos of content creation and render with drag and drop :<br />
+a 2 min </strong>speeded up<strong> "Simple" </strong>demo here<strong> : <a href="http://youtu.be/orBM1ja_ROM" target="_blank">http://youtu.be/orBM1ja_ROM</a></strong><br />
+and the <strong>foot </strong>demo (2min speed *4):&nbsp;<a target="_blank" href="http://youtu.be/4M1UQz84FHQ">http://youtu.be/4M1UQz84FHQ</a></p>
+<h4>Known Bug, workaround</h4>
+<ul>
+    <li>In the Edit Data part, in View Mode of the grid, there is a broken links if images are not set (normal)</li>
+    <li>Item Title and Group Title works on DNN 6.2.4/5/6, but not on DNN 7.0.5+ (Have to investigate on it, probably something with Telerik DLL more than DNN</li>
+    <li>Setting Reduce Size of 25 % will impact all Org Chart of a page if many</li>
+</ul>
+<h4>To do list</h4>
+<ul>
+    <li>Implement ISearchable</li>
+</ul>

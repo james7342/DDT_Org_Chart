@@ -1,0 +1,74 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+/****** Object:  Table {databaseOwner}[{objectQualifier}DDT_Org_Chart_Items]    Script Date: 1/12/2019 ******/
+
+IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'{databaseOwner}[{objectQualifier}DDT_Org_Chart_Items]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+
+BEGIN
+
+CREATE TABLE {databaseOwner}[{objectQualifier}DDT_Org_Chart_Items](
+	[ID_Org_Chart_Item] [int] IDENTITY(1,1) NOT NULL,
+	[PortalID] [int] NULL,
+	[ModuleID] [int] NULL,
+	[ID_Org_Chart_Node] [int] NULL,
+	[ItemName_Org_Chart] [nvarchar](max) NULL,
+	[ItemTitle_Org_Chart] [nvarchar](max) NULL,
+	[ItemImageUrl_Org_Chart] [nvarchar](max) NULL,
+	[ItemOrder_Org_Chart] [int] NULL,
+	[Collapsed] [bit] NULL,
+	[IsActive] [bit] NULL,
+	[IsDeleted] [bit] NULL,
+	[CreatedByUserID] [int] NULL,
+	[CreatedOnDate] [datetime] NULL,
+	[LastModifiedByUserID] [int] NULL,
+	[LastModifiedOnDate] [datetime] NULL
+)
+
+ALTER TABLE {databaseOwner}[{objectQualifier}DDT_Org_Chart_Items] ADD CONSTRAINT [PK_{databaseOwner}{objectQualifier}DDT_Org_Chart_Items] PRIMARY KEY CLUSTERED ([ID_Org_Chart_Item])
+
+END
+
+GO
+
+/****** Object:  Table {databaseOwner}{objectQualifier}[DDT_Org_Chart_Nodes]    Script Date: 1/12/2019  ******/
+
+IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'{databaseOwner}[{objectQualifier}DDT_Org_Chart_Nodes]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+
+BEGIN
+
+CREATE TABLE {databaseOwner}[{objectQualifier}DDT_Org_Chart_Nodes](
+	[ID_Org_Chart_Node] [int] IDENTITY(1,1) NOT NULL,
+	[PortalID] [int] NULL,
+	[ModuleID] [int] NULL,
+	[ParentID_Org_Chart_Node] [int] NULL,
+	[TeamName_Org_Chart_Node] [nvarchar](max) NULL,
+	[NodeOrder_Org_Chart] [int] NULL,
+	[Collapsed] [bit] NULL,
+	[GroupCollapsed] [bit] NULL,
+	[ColumnCount] [int] NULL,
+	[IsActive] [bit] NULL,
+	[IsDeleted] [bit] NULL,
+	[CreatedByUserID] [int] NULL,
+	[CreatedOnDate] [datetime] NULL,
+	[LastModifiedByUserID] [int] NULL,
+	[LastModifiedOnDate] [datetime] NULL
+)
+
+ALTER TABLE {databaseOwner}[{objectQualifier}DDT_Org_Chart_Nodes] ADD CONSTRAINT [PK_{databaseOwner}{objectQualifier}DDT_Org_Chart_Nodes] PRIMARY KEY CLUSTERED ([ID_Org_Chart_Node])
+
+END
+GO
