@@ -8,7 +8,7 @@ It was orginally develoepd by DevPCI for DNN 6.2.4+.
 
 I have taken the orginal source code and have gotten the module working in DNN 9.2.2. There are a few things I'll be trying to work out in the near future. I have not tested this module outside of DNN 9.2.2. I think might be ok with DNN 8.X and above.
 
-I'm no developer by any means so really looking for someone to contribute and help make this module better for teh DNN Community.
+I'm no developer by any means so really looking for someone to contribute and help make this module better for the DNN Community.
 
 # Version Beta 00.00.06
 <li>Changes for DNN 9.2.2</li>
