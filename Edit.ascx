@@ -4,7 +4,7 @@
 <%@ Register TagPrefix="dnn" TagName="UrlControl" Src="~/controls/URLControl.ascx" %>
 <%@ Register TagPrefix="dnn" Assembly="DotNetNuke.Web" Namespace="DotNetNuke.Web.UI.WebControls" %>
 <%@ Register TagPrefix="dnn" Assembly="DotNetNuke" Namespace="DotNetNuke.UI.WebControls" %>
-<%-- %><%@ Register TagPrefix="dnn" TagName="FilePickerUploader" Src="~/controls/filepickeruploader.ascx" %> --%>
+<%-- <%@ Register TagPrefix="dnn" TagName="FilePickerUploader" Src="~/controls/filepickeruploader.ascx" %> --%>
 <%@ Import Namespace="DotNetNuke.Services.Localization" %>
 <script type="text/javascript">
     var uploadedFilesCount = 0;
@@ -512,10 +512,10 @@
             <telerik:GridTemplateColumn DataField="ItemImageUrl_Org_Chart" FilterControlAltText="Filter ItemImageUrl_Org_Chart column" HeaderText="Item Image Url" SortExpression="ItemImageUrl_Org_Chart"
                     UniqueName="ItemImageUrl_Org_Chart" HeaderStyle-Width="280px">
                     <EditItemTemplate>
-                       <dnn:DnnFilePicker runat="server" ID="FilePickerSimple" FilePath='<%# Bind("ItemImageUrl_Org_Chart")%>'
+                    <dnn:DnnFilePicker runat="server" ID="FilePickerSimple" FilePath='<%# Bind("ItemImageUrl_Org_Chart")%>'
                         FileFilter="jpg,png,gif" />
-<%--                   <dnn:DnnFilePickerUploader runat="server" ID="FilePickerSimple" FilePath='<%# Bind("ItemImageUrl_Org_Chart")%>'
-                        FileFilter="jpg,png,gif" />--%>
+<%--                <dnn:DnnFilePickerUploader runat="server" ID="FilePickerSimple" FilePath='<%# Bind("ItemImageUrl_Org_Chart")%>'
+                        FileFilter="jpg,png,gif" /> --%>
                     </EditItemTemplate>
                     <ItemTemplate>
                         <img alt="<%# Eval("ItemImageUrl_Org_Chart")%>" src="/Portals/<%# Eval("PortalId") %>/<%# Eval("ItemImageUrl_Org_Chart")%>" />

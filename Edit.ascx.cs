@@ -734,6 +734,7 @@ namespace DevPCI.Modules.DDT_Org_Chart
                 tbLastModifiedOnDate.Text = Convert.ToString(DateTime.Now);
 
                 // fix filepicker V S
+                // DnnFilePicker myfileP = e.Item.FindControl("FilePickerSimple") as DnnFilePicker;
                 DnnFilePicker myfileP = e.Item.FindControl("FilePickerSimple") as DnnFilePicker;
                 if (myfileP.FilePath.Contains("//"))
                 {
