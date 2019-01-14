@@ -1,5 +1,5 @@
 /*
-' Copyright (c) 2011 DevPCI
+' Copyright (c) 2019 DevPCI
 '  All rights reserved.
 ' 
 ' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
