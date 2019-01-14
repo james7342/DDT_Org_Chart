@@ -185,15 +185,6 @@
             To modify move field declaration from designer file to code-behind file.
             </remarks>
         </member>
-        <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.ItemTitle_Org_Chart_EditBox_Style">
-            <summary>
-            ItemTitle_Org_Chart_EditBox_Style control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
         <member name="F:DevPCI.Modules.DDT_Org_Chart.Edit.LDS_Org_Chart_Nodes">
             <summary>
             LDS_Org_Chart_Nodes control.

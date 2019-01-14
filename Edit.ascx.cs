@@ -92,8 +92,8 @@ namespace DevPCI.Modules.DDT_Org_Chart
                 lblModuleID.Text = ModuleId.ToString();
                 PhMessageNotif3.Visible = false;
 
-                //bool IsHost = UserController.GetCurrentUserInfo().IsSuperUser;
-                //lblIsSuperUser.Text = Convert.ToString(UserController.GetCurrentUserInfo().IsSuperUser);
+                //bool IsHost =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
+                //lblIsSuperUser.Text = Convert.ToString( UserController.Instance.GetCurrentUserInfo().IsSuperUser);
 
 
                 if (Settings["Skin"] != null)
@@ -210,16 +210,16 @@ namespace DevPCI.Modules.DDT_Org_Chart
         protected void RG_Items_Simple_Load(object sender, EventArgs e)
         {
             //Gestion de l'affichage des champs uniquement destinés au Hosts.
-            //this.RG_Items_Simple.Columns.FindByUniqueName("ID_Org_Chart_Item").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
-            //this.RG_Items_Simple.Columns.FindByUniqueName("PortalID").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
-            //this.RG_Items_Simple.Columns.FindByUniqueName("ModuleID").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
-            //this.RG_Items_Simple.Columns.FindByUniqueName("ItemOrder_Org_Chart").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Items_Simple.Columns.FindByUniqueName("ID_Org_Chart_Item").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Items_Simple.Columns.FindByUniqueName("PortalID").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Items_Simple.Columns.FindByUniqueName("ModuleID").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Items_Simple.Columns.FindByUniqueName("ItemOrder_Org_Chart").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
             this.RG_Items_Simple.Columns.FindByUniqueName("ID_Org_Chart_Item").Visible = false;
             this.RG_Items_Simple.Columns.FindByUniqueName("PortalID").Visible = false;
             this.RG_Items_Simple.Columns.FindByUniqueName("ModuleID").Visible = false;
             this.RG_Items_Simple.Columns.FindByUniqueName("ItemOrder_Org_Chart").Visible = false;
-            //this.RG_Items_Simple.Columns.FindByUniqueName("IsActive").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
-            //this.RG_Items_Simple.Columns.FindByUniqueName("IsDeleted").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Items_Simple.Columns.FindByUniqueName("IsActive").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Items_Simple.Columns.FindByUniqueName("IsDeleted").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
             // Champs CreatedByUserID CreatedOnDate LastModifiedByUserID LastModifiedOnDate Non visibles
             this.RG_Items_Simple.Columns.FindByUniqueName("CreatedByUserID").Visible = false;
             this.RG_Items_Simple.Columns.FindByUniqueName("CreatedOnDate").Visible = false;
@@ -354,7 +354,7 @@ namespace DevPCI.Modules.DDT_Org_Chart
             var lDDT_Org_Chart_Items = from DDT_Org_Chart_Item DDT_Org_Chart_Item in linqContext.DDT_Org_Chart_Items
                                        where DDT_Org_Chart_Item.PortalID == PortalId && DDT_Org_Chart_Item.ModuleID == ModuleId
                //                      where DDT_Org_Chart_Item.PortalID == PortalId && DDT_Org_Chart_Item.IsDeleted == false && DDT_Org_Chart_Item.ModuleID == ModuleId
-               //                      || DDT_Org_Chart_Item.PortalID == PortalId && DDT_Org_Chart_Item.IsDeleted == UserController.GetCurrentUserInfo().IsSuperUser && DDT_Org_Chart_Item.ModuleID == ModuleId
+               //                      || DDT_Org_Chart_Item.PortalID == PortalId && DDT_Org_Chart_Item.IsDeleted ==  UserController.Instance.GetCurrentUserInfo().IsSuperUser && DDT_Org_Chart_Item.ModuleID == ModuleId
                                        orderby DDT_Org_Chart_Item.ItemOrder_Org_Chart
                                        select DDT_Org_Chart_Item;
 
@@ -424,16 +424,16 @@ namespace DevPCI.Modules.DDT_Org_Chart
         protected void RG_Teams_Load(object sender, EventArgs e)
         {
             //Gestion de l'affichage des champs uniquement destinés au Hosts.
-            //this.RG_Teams.Columns.FindByUniqueName("ID_Org_Chart_Node").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
-            //this.RG_Teams.Columns.FindByUniqueName("PortalID").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
-            //this.RG_Teams.Columns.FindByUniqueName("ModuleID").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
-            //this.RG_Teams.Columns.FindByUniqueName("NodeOrder_Org_Chart").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Teams.Columns.FindByUniqueName("ID_Org_Chart_Node").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Teams.Columns.FindByUniqueName("PortalID").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Teams.Columns.FindByUniqueName("ModuleID").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Teams.Columns.FindByUniqueName("NodeOrder_Org_Chart").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
             this.RG_Teams.Columns.FindByUniqueName("ID_Org_Chart_Node").Visible = false;
             this.RG_Teams.Columns.FindByUniqueName("PortalID").Visible = false;
             this.RG_Teams.Columns.FindByUniqueName("ModuleID").Visible = false;
             this.RG_Teams.Columns.FindByUniqueName("NodeOrder_Org_Chart").Visible = false;
-            //this.RG_Teams.Columns.FindByUniqueName("IsActive").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
-            //this.RG_Teams.Columns.FindByUniqueName("IsDeleted").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Teams.Columns.FindByUniqueName("IsActive").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Teams.Columns.FindByUniqueName("IsDeleted").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
             // Champs CreatedByUserID CreatedOnDate LastModifiedByUserID LastModifiedOnDate Non visibles
             this.RG_Teams.Columns.FindByUniqueName("CreatedByUserID").Visible = false;
             this.RG_Teams.Columns.FindByUniqueName("CreatedOnDate").Visible = false;
@@ -563,7 +563,7 @@ namespace DevPCI.Modules.DDT_Org_Chart
             var lDDT_Org_Chart_Nodes = from DDT_Org_Chart_Node DDT_Org_Chart_Node in linqContext.DDT_Org_Chart_Nodes
                                        where DDT_Org_Chart_Node.PortalID == PortalId && DDT_Org_Chart_Node.ModuleID == ModuleId
            //                          where DDT_Org_Chart_Node.PortalID == PortalId && DDT_Org_Chart_Node.IsDeleted == false && DDT_Org_Chart_Node.ModuleID == ModuleId
-           //                        || DDT_Org_Chart_Node.PortalID == PortalId && DDT_Org_Chart_Node.IsDeleted == UserController.GetCurrentUserInfo().IsSuperUser && DDT_Org_Chart_Node.ModuleID == ModuleId
+           //                        || DDT_Org_Chart_Node.PortalID == PortalId && DDT_Org_Chart_Node.IsDeleted ==  UserController.Instance.GetCurrentUserInfo().IsSuperUser && DDT_Org_Chart_Node.ModuleID == ModuleId
                                      orderby DDT_Org_Chart_Node.NodeOrder_Org_Chart
                                      select DDT_Org_Chart_Node;
 
@@ -639,16 +639,16 @@ namespace DevPCI.Modules.DDT_Org_Chart
         protected void RG_Items_WithGroup_Load(object sender, EventArgs e)
         {
             //Gestion de l'affichage des champs uniquement destinés au Hosts.
-            //this.RG_Items_WithGroup.Columns.FindByUniqueName("ID_Org_Chart_Item").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
-            //this.RG_Items_WithGroup.Columns.FindByUniqueName("PortalID").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
-            //this.RG_Items_WithGroup.Columns.FindByUniqueName("ModuleID").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
-            //this.RG_Items_WithGroup.Columns.FindByUniqueName("ItemOrder_Org_Chart").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Items_WithGroup.Columns.FindByUniqueName("ID_Org_Chart_Item").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Items_WithGroup.Columns.FindByUniqueName("PortalID").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Items_WithGroup.Columns.FindByUniqueName("ModuleID").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Items_WithGroup.Columns.FindByUniqueName("ItemOrder_Org_Chart").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
             this.RG_Items_WithGroup.Columns.FindByUniqueName("ID_Org_Chart_Item").Visible = false;
             this.RG_Items_WithGroup.Columns.FindByUniqueName("PortalID").Visible = false;
             this.RG_Items_WithGroup.Columns.FindByUniqueName("ModuleID").Visible = false;
             this.RG_Items_WithGroup.Columns.FindByUniqueName("ItemOrder_Org_Chart").Visible = false;
-            //this.RG_Items_WithGroup.Columns.FindByUniqueName("IsActive").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
-            //this.RG_Items_WithGroup.Columns.FindByUniqueName("IsDeleted").Visible = UserController.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Items_WithGroup.Columns.FindByUniqueName("IsActive").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
+            //this.RG_Items_WithGroup.Columns.FindByUniqueName("IsDeleted").Visible =  UserController.Instance.GetCurrentUserInfo().IsSuperUser;
             // Champs CreatedByUserID CreatedOnDate LastModifiedByUserID LastModifiedOnDate Non visibles
             this.RG_Items_WithGroup.Columns.FindByUniqueName("CreatedByUserID").Visible = false;
             this.RG_Items_WithGroup.Columns.FindByUniqueName("CreatedOnDate").Visible = false;
@@ -759,7 +759,7 @@ namespace DevPCI.Modules.DDT_Org_Chart
                     var lDDT_Org_Chart_Items = from DDT_Org_Chart_Item DDT_Org_Chart_Item in linqContext.DDT_Org_Chart_Items
                                                where DDT_Org_Chart_Item.PortalID == PortalId && DDT_Org_Chart_Item.ModuleID == ModuleId
                     //                           where DDT_Org_Chart_Item.PortalID == PortalId && DDT_Org_Chart_Item.IsDeleted == false && DDT_Org_Chart_Item.ModuleID == ModuleId
-                    //                           || DDT_Org_Chart_Item.PortalID == PortalId && DDT_Org_Chart_Item.IsDeleted == UserController.GetCurrentUserInfo().IsSuperUser && DDT_Org_Chart_Item.ModuleID == ModuleId
+                    //                           || DDT_Org_Chart_Item.PortalID == PortalId && DDT_Org_Chart_Item.IsDeleted ==  UserController.Instance.GetCurrentUserInfo().IsSuperUser && DDT_Org_Chart_Item.ModuleID == ModuleId
                                                select DDT_Org_Chart_Item;
                     //suivi du .Count() pour en avoir le nombre.
                     countDDT_Org_Chart_Items2 = lDDT_Org_Chart_Items.Count();
