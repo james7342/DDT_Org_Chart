@@ -135,6 +135,6 @@
   <data name="InitInfo.Text" xml:space="preserve">
     <value>You have to : &lt;br /&gt;
 1 - go to Settings , select your parameters and update.&lt;br /&gt;
-2 - go to Edit Module Datas and add at least enter one root Item (no Parent) or root group (no Parent)</value>
+2 - go to Edit Org Chart and add at least enter one root Item (no Parent) or root group (no Parent)</value>
   </data>
 </root>

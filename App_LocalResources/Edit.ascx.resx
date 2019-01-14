@@ -133,7 +133,7 @@
     <value>Confirm Delete ?</value>
   </data>
   <data name="ConfirmHardDelete.Text" xml:space="preserve">
-    <value>Confirm Definitive Delete ?</value>
+    <value>Confirm Permanent Delete ?</value>
   </data>
   <data name="ConfirmSoftDelete.Text" xml:space="preserve">
     <value>Confirm Delete ?</value>
@@ -194,7 +194,7 @@
     <value>Is Active</value>
   </data>
   <data name="IsDeleted.Text" xml:space="preserve">
-    <value>Is Delete</value>
+    <value>Is Deleted</value>
   </data>
   <data name="ItemImageUrl.Text" xml:space="preserve">
     <value>Item Image Url</value>

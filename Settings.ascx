@@ -33,20 +33,18 @@
     <dnn:Label runat="server" ControlName="SkinDropDownList" ResourceKey="Skin" Text="Skin" suffix=":"/>
     <asp:DropDownList ID="ddlSkin" runat="server">
         <asp:ListItem>Black</asp:ListItem>
+        <asp:ListItem>BlackMetroTouch</asp:ListItem>
         <asp:ListItem Selected="True">Default</asp:ListItem>
-        <asp:ListItem>Forest</asp:ListItem>
-        <asp:ListItem>Hay</asp:ListItem>
+        <asp:ListItem>Glow</asp:ListItem>
         <asp:ListItem>Metro</asp:ListItem>
         <asp:ListItem>MetroTouch</asp:ListItem>
         <asp:ListItem>Office2007</asp:ListItem>
         <asp:ListItem>Office2010Black</asp:ListItem>
         <asp:ListItem>Office2010Blue</asp:ListItem>
         <asp:ListItem>Office2010Silver</asp:ListItem>
-        <asp:ListItem>Simple</asp:ListItem>
-        <asp:ListItem>Sitefinity</asp:ListItem>
-        <asp:ListItem>Sunset</asp:ListItem>
-        <asp:ListItem>Telerik</asp:ListItem>
-        <asp:ListItem>Transparent</asp:ListItem>
+        <asp:ListItem>Outlook</asp:ListItem>
+        <asp:ListItem>Silk</asp:ListItem>
+        <asp:ListItem>Telerik</asp:ListItem>        
         <asp:ListItem>Vista</asp:ListItem>
         <asp:ListItem>Web20</asp:ListItem>
         <asp:ListItem>WebBlue</asp:ListItem>

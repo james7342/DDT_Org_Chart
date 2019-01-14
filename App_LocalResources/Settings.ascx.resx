@@ -199,10 +199,10 @@
     <value>Group title</value>
   </data>
   <data name="ReductSize25.Help" xml:space="preserve">
-    <value>Reduct Size of 25 %</value>
+    <value>Reduce Size by 25 %</value>
   </data>
   <data name="ReductSize25.Text" xml:space="preserve">
-    <value>Reduct Size of 25 %</value>
+    <value>Reduce Size by 25 %</value>
   </data>
   <data name="ShowExpandCollapseGroupButton.Help" xml:space="preserve">
     <value>Show Expand Collapse Group Button</value>

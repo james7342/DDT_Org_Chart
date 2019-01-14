@@ -26,7 +26,7 @@
 </asp:PlaceHolder>
 <asp:PlaceHolder ID="phReductSize25" runat="server" Visible="false">
 <style type="text/css">
-/* reduct size of 25 % */
+/* Reduce size by 25 % */
 html .RadOrgChart .rocLineUp
 {
     height:10px ;
@@ -38,6 +38,7 @@ html .RadOrgChart .rocLineDown
     height:10px;
 
 }
+
 html .RadOrgChart .rocLineHorizontal
 {
     top: -10px;
