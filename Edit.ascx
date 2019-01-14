@@ -28,15 +28,14 @@
 </script>
 <asp:PlaceHolder ID="phdnn7filepickercsshack" runat="server" Visible="false">
 <style type="text/css"> 
-.dnnFilePicker {
-    background-color: #F0F0F0;
+.dnnFilePicker {    
     display: block;
     float: left;
-    margin-bottom: 0;
-    margin-right: 10px;
-    padding-left: 15px;
-    padding-top: 35px;
-    width: 340px;
+    background-color: #f0f0f0;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    padding: 60px 0 0 15px;
+    width: 370px;
 }
 </style>
 </asp:PlaceHolder>
