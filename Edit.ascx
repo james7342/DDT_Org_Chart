@@ -413,7 +413,8 @@
 
 <%--Edit WIth Group Contols--%>
 
-    <h1><asp:Label ID="lblItems2" runat="server" Text="Items" ResourceKey="lblItems"></asp:Label></h1><telerik:RadGrid ID="RG_Items_WithGroup" runat="server" AllowAutomaticDeletes="True"
+    <h1><asp:Label ID="lblItems2" runat="server" Text="Items" ResourceKey="lblItems"></asp:Label></h1>  
+    <telerik:RadGrid ID="RG_Items_WithGroup" runat="server" AllowAutomaticDeletes="True"
     AllowAutomaticInserts="True" AllowAutomaticUpdates="True" AllowMultiRowEdit="True" AllowMultiRowSelection="True"
     AutoGenerateColumns="False" CellSpacing="0" DataSourceID="LDS_Org_Chart_Items"
     GridLines="None" OnItemDataBound="RG_Items_WithGroup_ItemDataBound" OnLoad="RG_Items_WithGroup_Load" OnItemCreated="RG_Items_WithGroup_ItemCreated">
@@ -502,11 +503,10 @@
             <telerik:GridBoundColumn DataField="ItemName_Org_Chart" FilterControlAltText="Filter ItemName_Org_Chart column"
                 HeaderText="Item Name" SortExpression="ItemName_Org_Chart" UniqueName="ItemName_Org_Chart" HeaderStyle-Width="180px">
             </telerik:GridBoundColumn>
-            <telerik:GridBoundColumn DataField="ItemTitle_Org_Chart" FilterControlAltText="Filter ItemTitle_Org_Chart column"
+            <telerik:GridBoundColumn ColumnEditorID="ItemTitle_Org_Chart_EditBox_Style" DataField="ItemTitle_Org_Chart" FilterControlAltText="Filter ItemTitle_Org_Chart column"
                 HeaderText="Item Title" SortExpression="ItemTitle_Org_Chart" UniqueName="ItemTitle_Org_Chart"  HeaderStyle-Width="180px">
-            </telerik:GridBoundColumn>
-
-<%--            <telerik:GridBoundColumn DataField="ItemImageUrl_Org_Chart" FilterControlAltText="Filter ItemImageUrl_Org_Chart column"
+            </telerik:GridBoundColumn>        
+<%--        <telerik:GridBoundColumn DataField="ItemImageUrl_Org_Chart" FilterControlAltText="Filter ItemImageUrl_Org_Chart column"
                 HeaderText="ItemImageUrl_Org_Chart" SortExpression="ItemImageUrl_Org_Chart" UniqueName="ItemImageUrl_Org_Chart">
             </telerik:GridBoundColumn>--%>
             <telerik:GridTemplateColumn DataField="ItemImageUrl_Org_Chart" FilterControlAltText="Filter ItemImageUrl_Org_Chart column" HeaderText="Item Image Url" SortExpression="ItemImageUrl_Org_Chart"
@@ -532,7 +532,7 @@
                         <asp:TextBox ID="OrderIDTextBox" runat="server" Text='<%# Bind("ItemOrder_Org_Chart")%>'></asp:TextBox>
                     </EditItemTemplate>
                     <ItemTemplate>
-                        <asp:Label ID="OrderIDLabelTextBox" runat="server" Text='<%# Eval("ItemOrder_Org_Chart")%>'></asp:Label>
+                        <asp:Label ID="OrderIDLabelTextBox" runat="server" Text='<%# Eval("ItemOrder_Org_Chart")%>'></asp:Label>                 
                     </ItemTemplate>
             </telerik:GridTemplateColumn>
             <telerik:GridCheckBoxColumn DataField="Collapsed" DataType="System.Boolean" FilterControlAltText="Filter Collapsed column"
@@ -605,6 +605,11 @@
     <FilterMenu EnableImageSprites="False">
     </FilterMenu>
 </telerik:RadGrid>
+
+<%-- Set ItemText Box Size
+    <telerik:GridTextBoxColumnEditor ID="ItemTitle_Org_Chart_EditBox_Style" runat="server">
+                 <TextBoxStyle Height="200px"/>
+    </telerik:GridTextBoxColumnEditor>--%>
 
 </asp:PlaceHolder>
 <asp:LinqDataSource ID="LDS_Org_Chart_Nodes" runat="server" ContextTypeName="DevPCI.Modules.DDT_Org_Chart.DDT_Org_Chart_LinqDataContext"
